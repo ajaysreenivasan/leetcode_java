@@ -1,3 +1,8 @@
+/*
+ * Anagram Finder
+ * Obvious solution should be obvious. 
+ */
+
 import java.util.Collection;
 import java.util.HashMap;
 
