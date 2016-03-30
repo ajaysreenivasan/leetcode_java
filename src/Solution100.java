@@ -26,14 +26,4 @@ public class Solution100 {
 				return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right));
 		}
 	}
-
-	private class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-
-		TreeNode(int x) {
-			val = x;
-		}
-	}
 }
