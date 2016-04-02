@@ -30,14 +30,6 @@ public class Solution328 {
 		l1Cursor = l1Cursor.next;
 		l1Cursor.next = new ListNode(3);
 		l1Cursor = l1Cursor.next;
-		// l1Cursor.next = new ListNode(-3);
-		// l1Cursor = l1Cursor.next;
-		// l1Cursor.next = new ListNode(-1);
-		// l1Cursor = l1Cursor.next;
-		// l1Cursor.next = new ListNode(2);
-		// l1Cursor = l1Cursor.next;
-		// l1Cursor.next = new ListNode(3);
-		// l1Cursor = l1Cursor.next;
 
 		ListNode sorted = oddEvenList(l1);
 
