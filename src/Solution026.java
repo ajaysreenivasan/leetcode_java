@@ -8,7 +8,7 @@
  * 	It doesn't matter what you leave beyond the new length.
  */
 
-public class Solution26 {
+public class Solution026 {
 	public int removeDuplicates(int[] nums) {
 		int uniqueCount = 0;
 		int numsLength = nums.length;

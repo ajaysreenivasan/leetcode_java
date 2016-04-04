@@ -1,5 +1,5 @@
 
-public class Solution58 {
+public class Solution058 {
     public static void main(String[] args) {
         System.out.println(lengthOfLastWord("Hello World"));
     }

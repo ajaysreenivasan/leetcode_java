@@ -1,5 +1,5 @@
 
-public class Solution24 {
+public class Solution024 {
 	public static ListNode swapPairs(ListNode head){
 		ListNode newListHead = head;
 		ListNode cursor = head;

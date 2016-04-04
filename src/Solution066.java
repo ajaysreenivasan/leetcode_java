@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Solution66 {
+public class Solution066 {
     public static void main(String[] args) {
         int[] newVal = plusOne(new int[] { 9, 9 });
 

@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-public class Solution56 {
+public class Solution056 {
 
 	public static void main(String[] args) {
 		List<Interval> intervals = new ArrayList<>();

@@ -1,5 +1,5 @@
 
-public class Solution21 {
+public class Solution021 {
 	private static class ListNode {
 		int val;
 		ListNode next;

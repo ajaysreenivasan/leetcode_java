@@ -5,7 +5,7 @@
  * Solution: This is DP, but barely.
  */
 
-public class Solution70 {
+public class Solution070 {
 	int[] distinctWays;
 
 	public int climbStairs(int n) {
