@@ -26,7 +26,23 @@ public class Solution223 {
 
 	private static int calculateOverlap(int a, int b, int c, int d) {
 		long difference = (Math.min(d, b) - Math.max(c, a));
-
+		System.out.println("la " + difference);
 		return difference > 0 ? (int) difference : 0;
 	}
+	/*
+	public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
+		  int xOverlapping = calcOverlap(A, C, E, G);
+		  int yOverlapping = calcOverlap(B, D, F, H);
+		  return (C - A) * (D - B) + (G - E) * (H - F) - xOverlapping * yOverlapping;
+		}
+
+		private int calcOverlap(long a1, long a2, long b1, long b2) {
+		  long diff = (Math.min(a2, b2) - Math.max(a1, b1));
+		  if (diff > 0) {
+		    return (int) diff;
+		  } else {
+		    return 0;
+		  }
+		} */
 }
+
