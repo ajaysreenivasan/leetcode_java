@@ -1,22 +1,27 @@
+/*
+ * Find the total area covered by two rectilinear rectangles in a 2D plane.
+ * Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.
+ */
 
 public class Solution223 {
 	public static void main(String[] args) {
-		System.out.println(computeArea(-1500000001, 0, -1500000000, 1, 1500000000, 0, 1500000001, 1));
+		// System.out.println(computeArea(-1500000001, 0, -1500000000, 1,
+		// 1500000000, 0, 1500000001, 1));
 	}
 
-	public static int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
+	public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
 		int totalArea = 0;
 
-		long rectangleOneHeight = C - A;
-		long rectangleOneLength = D - B;
+		long rectangleOneLength = C - A;
+		long rectangleOneHeight = D - B;
 		int rectangleOneArea = (int) (rectangleOneHeight * rectangleOneLength);
 
-		long rectangleTwoHeight = G - E;
-		long rectangleTwoLength = H - F;
+		long rectangleTwoLength = G - E;
+		long rectangleTwoHeight = H - F;
 		int rectangleTwoArea = (int) (rectangleTwoHeight * rectangleTwoLength);
 
-		int overlapHeight = calculateOverlap(A, C, E, G);
-		int overlapLength = calculateOverlap(B, D, F, H);
+		int overlapLength = calculateOverlap(A, C, E, G);
+		int overlapHeight = calculateOverlap(B, D, F, H);
 		int overlapArea = overlapHeight * overlapLength;
 
 		totalArea = rectangleOneArea + rectangleTwoArea - overlapArea;
@@ -24,25 +29,9 @@ public class Solution223 {
 		return totalArea;
 	}
 
-	private static int calculateOverlap(int a, int b, int c, int d) {
-		long difference = (Math.min(d, b) - Math.max(c, a));
-		System.out.println("la " + difference);
+	private int calculateOverlap(long v1Box1, long v2Box1, long v1Box2, long v2Box2) {
+		long difference = (Math.min(v2Box1, v2Box2) - Math.max(v1Box1, v1Box2));
+
 		return difference > 0 ? (int) difference : 0;
 	}
-	/*
-	public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
-		  int xOverlapping = calcOverlap(A, C, E, G);
-		  int yOverlapping = calcOverlap(B, D, F, H);
-		  return (C - A) * (D - B) + (G - E) * (H - F) - xOverlapping * yOverlapping;
-		}
-
-		private int calcOverlap(long a1, long a2, long b1, long b2) {
-		  long diff = (Math.min(a2, b2) - Math.max(a1, b1));
-		  if (diff > 0) {
-		    return (int) diff;
-		  } else {
-		    return 0;
-		  }
-		} */
 }
-
