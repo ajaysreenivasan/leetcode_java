@@ -50,6 +50,12 @@ public class Solution021 {
 		print(l2);
 
 		ListNode merge = mergeTwoLists(l1, l2);
+		ListNode cursor = merge;
+		while(cursor != null){
+			System.out.println(cursor.val);
+			cursor = cursor.next;
+		}
+
 	}
 
 	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
